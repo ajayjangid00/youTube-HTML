@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image" href="https://www.freepnglogos.com/uploads/video-youtube-icon-27.png">
+    <title>You Tube</title>
+   
+    <!-- icosn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+   *{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: white;
+}
+header{
+    background-color: white;
+    padding: 10px 0;
+}
+header .menu{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* width: 100%; */
+}
+
+header .menu .logo{
+    display: flex;
+    /* justify-content: ; */
+    align-items: center;
+    /* background-color: blue; */
+    font-size: 25px;
+}
+header .menu .logo .fa-bars{
+    padding: 10px 30px;
+    font-size: 1em;
+}
+header .menu .logo img{
+    /* font-size: 1em;
+    font-family: sans-serif;
+    font-weight: bold; */
+    width: 20%;
+
+}
+header .menu .search{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: green; */
+    padding: 0 30px;
+    position: relative;
+    left: -120px;
+}
+header .menu .search .ser{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* background-color: white; */
+    position: relative;
+}
+header .menu .search .ser input{
+    width: 45vw;
+    height: 5.3vh;
+    border-radius: 30px;
+    border: 1px solid whitesmoke;
+    box-shadow: 0px 0px 1px 0px black;
+}
+header .menu .search .ser input::placeholder{
+    padding-left: 30px;
+}
+header .menu .search .ser .fa-search{
+    background-color: whitesmoke;
+    padding: 1.5vh 1.5vw;
+    position: absolute;
+  right: 1px;
+ border-top-right-radius: 30px;
+ border-bottom-right-radius: 30px;
+ border-left: 1px solid;
+}
+header .menu .search .fa-microphone{
+margin-left: 30px;
+background-color: whitesmoke;
+padding: 14px 16px;
+border-radius: 50%;
+}
+header .menu .icons{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+header .menu .icons img{
+    width: 1.7vw;
+    padding: 0 20px;
+}
+
+/*  */
+.main{
+    height: 88vh;
+    /* background-color: skyblue; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main .box1{
+    width: 13vw;
+    height: 91vh;
+    background-color: white;
+    padding: 20px 0 0px 30px;
+    font-size: 16px;
+    overflow-y: scroll;
+    font-family: sans-serif;
+    
+}
+.main .box1::-webkit-scrollbar {
+    width: 3px;
+    height: 1px;
+    background-color: whitesmoke;
+  }
+
+.main .box1 table .active{
+    background-color: whitesmoke;
+}
+
+.main .box1 table tr td{
+padding: 9px 3px 9px 5px;
+}
+.main .box1 table tr:hover{
+    background-color: whitesmoke;
+}
+
+.main .box1 table tr td p{
+    /* padding: 0px 10px; */
+    font-size: 1em;
+}
+
+/*  */
+
+.main .box2{
+    height: 93vh;
+    width: calc(100vw - 13vw);
+    background-color: white;
+}
+.main .box2 .top-bar{
+    height: 8vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: scroll;
+    padding: 0  0 0 500px;
+    margin-top: 6px;
+}
+.main .box2 .top-bar::-webkit-scrollbar {
+    width: 1px;
+    height: 2px;
+    background-color: whitesmoke;
+  }
+.main .box2 .top-bar ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    /* background-color: greenyellow; */
+    font-size: 16px;
+    font-family: sans-serif;
+}
+.main .box2 .top-bar ul li{
+   margin: 0 10px;
+   padding: 8px 19px;
+   border-radius: 10px;
+    font-size: 1em;
+    background-color: whitesmoke;
+}
+.main .box2 .top-bar ul .active{
+    background-color: black;
+    color: white;
+}
+.main .box2 .top-bar ul li:hover{
+    background-color: black;
+    color: white   
+}
+
+
+.main .box2 .video-bar{
+    height: calc(88vh - 7vh);
+    background-color: white;
+    padding: 20px 10px 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+}
+
+/*  */
+.main .box2 .video-bar .video-box{
+    width: 25vw;
+    height: 42vh;
+    background-color: white;
+    border-radius: 10px;
+    margin-bottom: -2px;
+}
+.main .box2 .video-bar .video-box{
+  
+}
+.main .box2 .video-bar .video-box .video-thum{
+    /* background-color: red; */
+    width: 25vw;
+    height: 28vh;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.main .box2 .video-bar .video-box .video-detail{
+    background-color: white;
+    width: 24.5vw;
+    height: 10vh;
+    padding: 10px 0px 0 10px;
+    display: flex;
+    
+}
+.main .box2 .video-bar .video-box .video-detail .profile{
+    background-color: white;
+    width: 2vw;
+    height: 5vh;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.main .box2 .video-bar .video-box .video-detail .profile img{
+    width: 100%;
+}
+.main .box2 .video-bar .video-box .video-detail .video-title{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 0 15px;
+    font-family: sans-serif;
+font-size: 16px;
+}
+.main .box2 .video-bar .video-box .video-detail .video-title h6{
+    padding: 3px 0px;
+    font-size: 1.1em;
+}
+.main .box2 .video-bar .video-box .video-detail .video-title p{
+    padding: 3px 0px;
+    font-size: .8em;
+    color: black;
+    opacity: .6;
+}
+.main .box2 .video-bar .video-box .video-detail .video-title p .fa{
+background-color: #ddd;
+border-radius: 50%;
+padding: 2px;
+}
+@media only screen and (min-width:426px) and (max-width:768px) {
+  
+  header .menu {
+      /* background-color: orange; */
+  }
+
+  header .menu .logo .fa-bars {
+      padding: 10px 10px;
+      font-size: 1em;
+  }
+
+  header .menu .logo img {
+      /* font-size: .5em; */
+      width: 59%;
+  }
+
+  header .menu .search {
+      padding: 0 20px;
+      left: 0;
+  }
+
+  header .menu .search .ser input{
+      height: 5vh;
+  }
+  header .menu .search .ser input::placeholder{
+      padding-left: 20px;
+  }
+  header .menu .search .ser .fa-search {
+      padding: 1.2vh 1.9vw;
+  }
+
+  header .menu .search .fa-microphone {
+      padding: 8px 10px;
+      margin-left: 20px;
+  }
+  header .menu .icons img{
+      width: 2vw;
+  }
+  .main .box1{
+  width: 19vw;
+  padding: 20px 0px 0px 10px;
+  }
+  .main .box1 table tr td .fa{
+      padding: 0px 8px;
+      font-size: 1.1em;
+  }
+  .main .box1 table tr td p{
+      /* padding: 0px 10px; */
+      font-size: .9em;
+  }
+  .main .box2{
+      height: 93vh;
+      width: calc(100vw - 19vw);
+      /* background-color: aqua; */
+      overflow: hidden;
+  }
+  .main .box2 .top-bar{
+      height: 6vh;
+  padding: 0  0 6px 680px;
+  margin-top: 2px;
+  }
+  .main .box2 .top-bar ul li{
+      margin: 0 10px;
+      padding: 4px 15px;
+      border-radius: 10px;
+       font-size: .6em;
+   }
+   .main .box2 .video-bar .video-box{
+      width: 37vw;
+      height: 42vh;
+      /* background-color: red; */
+      /* border-radius: 10px; */
+      margin-bottom: -20px;
+  }
+  .main .box2 .video-bar .video-box .video-thum{
+      /* background-color: yellow; */
+      width: 37vw;
+      height: 24vh;
+      /* height: 30vh; */
+      /* border-radius: 10px; */
+      /* overflow: hidden; */
+  }
+  .main .box2 .video-bar .video-box .video-detail{
+      /* background-color: blue; */
+      width: 36vw;
+      /* height: 10vh; */
+      /* padding: 10px 0px 0 10px; */
+      /* display: flex; */
+      
+  }
+  .main .box2 .video-bar .video-box .video-detail .profile{
+      /* background-color: aqua; */
+      width: 5vw;
+      height: 5vh;
+      /* border-radius: 50%; */
+      /* overflow: hidden; */
+  }
+  .main .box2 .video-bar .video-box .video-detail .video-title{
+      padding: 0 3px;
+  }
+  .main .box2 .video-bar .video-box .video-detail .video-title h6{
+      padding: 3px 0px;
+      font-size: 1em;
+  }
+  .main .box2 .video-bar .video-box .video-detail .video-title p{
+      padding: 3px 0px;
+      font-size: .6em;
+  }
+}
+
+@media only screen and (min-width:0px) and (max-width:426px) {
+    header .menu {
+        /* background-color: orange; */
+    }
+
+    header .menu .logo{
+      width: 20%;
+    }
+    header .menu .logo .fa-bars {
+        padding: 10px 5px 10px 10px;
+        font-size: .7em;
+    }
+
+    header .menu .logo img {
+        /* font-size: .4em; */
+        width: 60%;
+        margin-left: 5px;
+    }
+
+    header .menu .search {
+        padding: 0 0px;
+        width: 50%;
+        left: 0;
+    }
+    header .menu .search .ser{
+        left: 20px;
+    }
+
+    header .menu .search .ser input {
+        height: 2.8vh;
+        border: none;
+        border: .5px solid;
+    }
+    header .menu .search .ser input::placeholder{
+        padding-left: 10px;
+        font-size: .7em;
+    }
+
+    header .menu .search .ser .fa-search {
+        padding: .4vh 1.9vw;
+        font-size: .8em;
+    }
+
+    header .menu .search .fa-microphone {
+        padding: 5px 7px;
+        margin-left: 25px;
+        font-size: .7em;
+    }
+    header .menu .icons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    header .menu .icons img {
+        width: 4vw;
+        padding: 0 15px;
+    }
+    header .menu .icons .playlist,.viodeoup{
+        display: none;
+    }
+    .main .box1{
+    padding: 20px 0 0px 10px;
+
+    }
+    .main .box1 table tr td{
+        padding: 7px 0;
+        }
+    .main .box1 table tr td .fa{
+        padding: 0px 9px;
+        font-size: 1em;
+    }
+    .main .box1 table tr td p{
+        display: none;
+    }
+    
+    .main .box2{
+        height: 93vh;
+        /* width: calc(100vw - 19vw); */
+        /* background-color: aqua; */
+        overflow: hidden;
+    }
+    .main .box2 .top-bar{
+        height: 6vh;
+    padding: 0  0 6px 670px;
+    margin-top: 2px;
+    }
+    .main .box2 .top-bar ul li{
+        margin: 0 10px;
+        padding: 4px 15px;
+        border-radius: 10px;
+         font-size: .6em;
+     }
+     .main .box2 .video-bar .video-box{
+        width: 79vw;
+        height: 42vh;
+        /* background-color: red; */
+        /* border-radius: 10px; */
+        margin-bottom: -25px;
+    }
+    .main .box2 .video-bar .video-box .video-thum{
+        background-color: yellow;
+        width: 79vw;
+        height: 24vh;
+        /* border-radius: 10px; */
+        /* overflow: hidden; */
+    }
+    .main .box2 .video-bar .video-box .video-thum video{
+        object-fit: cover;
+    }
+    .main .box2 .video-bar .video-box .video-detail{
+        /* background-color: blue; */
+        width: 76vw;
+        /* height: 10vh; */
+        /* padding: 10px 0px 0 10px; */
+        /* display: flex; */
+        
+    }
+    .main .box2 .video-bar .video-box .video-detail .profile{
+        /* background-color: aqua; */
+        width: 30px;
+        height:27px;
+        margin-right: 14px;
+        
+        /* border-radius: 50%; */
+        /* overflow: hidden; */
+    }
+    .main .box2 .video-bar .video-box .video-detail .video-title{
+        padding:0px
+    }
+    .main .box2 .video-bar .video-box .video-detail .video-title h6{
+        padding: 3px 0px;
+        font-size: 1em;
+    }
+    .main .box2 .video-bar .video-box .video-detail .video-title p{
+        padding: 3px 0px;
+        font-size: .6em;
+    }
+
+
+}
+</style>
+    
+</head>
+<body>
+   <header>
+    <div class="menu">
+        <div class="logo">
+            <i class="fa fa-bars"></i>
+            <img src="data:image/jpeg;base64,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" alt="">
+        </div>
+
+        <div class="search">
+           <div class="ser">
+            <input type="text" placeholder="Search...">
+            <i class="fa fa-search"></i>
+           </div>
+           <i class="fa fa-microphone"></i>
+        </div>
+
+        <div class="icons">
+           <img src="https://cdn-icons-png.flaticon.com/128/4043/4043797.png" alt="" class="playlist">
+           <img src="https://cdn-icons-png.flaticon.com/128/4239/4239186.png" alt="" class="viodeoup">
+            <i class="fa fa-bell"></i>
+          <img src="https://cdn-icons-png.flaticon.com/128/64/64572.png" alt="">
+        </div>
+    </div>
+   </header> 
+
+   <!-- side bar -->
+   <div class="main">
+    <div class="box1">
+        <table cellspacing="0">
+            <tr class="active">
+                <td><i class="fa fa-user"></i></td>
+                <td><p>Home</p></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td><i class="fa fa-bolt"></i></td>
+                <td><p>Shorts</p></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td><i class="fa fa-envelope-open"></i></td>
+                <td><p>Subscription</p></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <th><hr></th>
+                <th><hr></th>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td><i class="fa fa-user"></i></td>
+                <td><p>Channal</p></td>
+            </tr>
+             <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td><i class="fa fa-history"></i></td>
+                <td><p>History</p></td>
+            </tr>
+             <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td><i class="fa fa-video-camera"></i></td>
+                <td><p>Your Video</p></td>
+            </tr>
+             <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td><i class="fa fa-clock-o"></i></td>
+                <td><p>Watch Later</p></td>
+            </tr>
+             <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td><i class="fa fa-heart-o"></i></td>
+                <td><p>Liked Video</p></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <th><hr></th>
+                <th><hr></th>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td><i class="fa fa-rss" aria-hidden="true"></i></td>
+                <td><p>Network</p></td>
+            </tr>
+             <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td><i class="fa fa-map-marker" aria-hidden="true"></i></td>
+                <td><p>map</p></td>
+            </tr>
+             <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td><i class="fa fa-tags" aria-hidden="true"></i></td>
+                <td><p>tags</p></td>
+            </tr>
+             <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td><i class="fa fa-trash" aria-hidden="true"></i></td>
+                <td><p>Delete</p></td>
+            </tr>
+             <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td><i class="fa fa-television" aria-hidden="true"></i></td>
+                <td><p>tv</p></td>
+            </tr>
+
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <th><hr></th>
+                <th><hr></th>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td><i class="fa fa-upload" aria-hidden="true"></i></td>
+                <td><p>upload</p></td>
+            </tr>
+             <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td><i class="fa fa-volume-up" aria-hidden="true"></i></td>
+                <td><p>sound</p></td>
+            </tr>
+             <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td><i class="fa fa-cog" aria-hidden="true"></i></td>
+                <td><p>setting</p></td>
+            </tr>
+             <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td><i class="fa fa-sign-out" aria-hidden="true"></i></td>
+                <td><p>logout</p></td>
+            </tr>
+             <tr>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+    <div class="box2">
+        <div class="top-bar">
+            <ul>
+                <li></li>
+                <li class="active">All</li>
+                <li>Music</li>
+                <li>Live</li>
+                <li>Gaming</li>
+                <li>Sales</li>
+                <li>New</li>
+                <li>Entertenment</li>
+                <li>Bollywood</li>
+                <li>Anime</li>
+                <li>Movie</li>
+                <li>pop</li>
+                <li>Watched</li>
+                <li>Near</li>
+                <li>Recently</li>
+                <li>learn</li>
+                <li>creator</li>
+                <li>india</li>
+                <li>top</li>
+
+            </ul>
+        </div>
+        <div class="video-bar">
+            <div class="video-box">
+                <div class="video-thum">
+                    <video width="100%" height="100%"
+         poster= "https://static.rfstat.com/gm-media/template/84/screen/7340/style/7391/78fb9fe83ee4_1x.webp"
+                type="video/mp4"> 
+    </video> 
+                </div>
+                
+                <div class="video-detail">
+                    <div class="profile">
+                        <img src="https://th.bing.com/th?id=OIP.DvP0bnIfw4mS0nrglNiDnQHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&dpr=1.3&pid=3.1&rm=2" alt="">
+                    </div>
+                    <div class="video-title">
+                        <h6>India's Best Games Review</h6>
+                        <p>Top 10<i class="fa fa-check"></i></p>
+                        <p>10M Views . 5 days ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="video-box">
+                <div class="video-thum">
+                    <video width="100%" height="100%"
+          poster="https://static.rfstat.com/gm-media/template/165/screen/6294/style/6345/9d010830cf45_1x.webp"> 
+        <source src="https://player.vimeo.com/progressive_redirect/playback/854042116/rendition/360p/file.mp4?loc=external&oauth2_token_id=57447761&signature=c5671fd0c1b4e8b053454e030e63dabcc0fc548c75762c76911fa75b888d4575"
+                type="video/mp4"> 
+    </video> 
+                </div>
+                
+                <div class="video-detail">
+                    <div class="profile">
+                        <img src="https://th.bing.com/th/id/OIP.Vy5PUdCk1nZpeE31MCa1pwHaHa?w=169&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="">
+                    </div>
+                    <div class="video-title">
+                        <h6>Best phone under 10k</h6>
+                        <p>Fact Hero<i class="fa fa-check"></i></p>
+                        <p>500k Views . 13 days ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-box">
+                <div class="video-thum">
+                    <video width="100%" height="100%"
+          poster= 
+"https://static.rfstat.com/gm-media/template/99/screen/7749/style/7800/20b17e02a8bc_1x.webp"> 
+        <source src="https://player.vimeo.com/progressive_redirect/playback/854042116/rendition/360p/file.mp4?loc=external&oauth2_token_id=57447761&signature=c5671fd0c1b4e8b053454e030e63dabcc0fc548c75762c76911fa75b888d4575"
+                type="video/mp4"> 
+    </video> 
+                </div>
+                
+                <div class="video-detail">
+                    <div class="profile">
+                        <img src="https://th.bing.com/th/id/OIP.ESxBo0f2O3FlzG6_r8sL6AHaHa?w=185&h=184&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="">
+                    </div>
+                    <div class="video-title">
+                        <h6>How to Handle dogs</h6>
+                        <p>BB Ki Vines<i class="fa fa-check"></i></p>
+                        <p>110M Views . 11 week ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="video-box">
+                <div class="video-thum">
+                    <video width="100%" height="100%"
+          poster= 
+"https://static.rfstat.com/gm-media/template/216/screen/7310/style/7361/9b3ae5223c26_1x.webp"> 
+        <source src="https://player.vimeo.com/progressive_redirect/playback/854042116/rendition/360p/file.mp4?loc=external&oauth2_token_id=57447761&signature=c5671fd0c1b4e8b053454e030e63dabcc0fc548c75762c76911fa75b888d4575"
+                type="video/mp4"> 
+    </video> 
+                </div>
+                
+                <div class="video-detail">
+                    <div class="profile">
+                        <img src="https://th.bing.com/th/id/OIP.UvYdFBC5Gk1deO2ShM7TFwHaHa?w=164&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="">
+                    </div>
+                    <div class="video-title">
+                        <h6>It wouldn't be some random </h6>
+                        <p>B2 Facts<i class="fa fa-check"></i></p>
+                        <p>100k Views . 10 days ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-box">
+                <div class="video-thum">
+                    <video width="100%" height="100%"
+          poster= 
+"https://static.rfstat.com/gm-media/template/231/screen/9904/style/9950/88d770297f94_1x.webp"> 
+        <source src="https://player.vimeo.com/progressive_redirect/playback/854042116/rendition/360p/file.mp4?loc=external&oauth2_token_id=57447761&signature=c5671fd0c1b4e8b053454e030e63dabcc0fc548c75762c76911fa75b888d4575"
+                type="video/mp4"> 
+    </video> 
+                </div>
+                
+                <div class="video-detail">
+                    <div class="profile">
+                        <img src="https://th.bing.com/th/id/OIP.fTKdilLzotbl-nzeSBY13AHaHa?w=162&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="">
+                    </div>
+                    <div class="video-title">
+                        <h6>You will see results in a popup </h6>
+                        <p>Music Guru<i class="fa fa-check"></i></p>
+                        <p>201M Views . 1 days ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="video-box">
+                <div class="video-thum">
+                    <video width="100%" height="100%"
+          poster= 
+"https://static.rfstat.com/gm-media/template/87/screen/7203/style/7254/79cad4a9d8e3_1x.webp"> 
+        <source src="https://player.vimeo.com/progressive_redirect/playback/854042116/rendition/360p/file.mp4?loc=external&oauth2_token_id=57447761&signature=c5671fd0c1b4e8b053454e030e63dabcc0fc548c75762c76911fa75b888d4575"
+                type="video/mp4"> 
+    </video> 
+                </div>
+                
+                <div class="video-detail">
+                    <div class="profile">
+                        <img src="https://www.autocarbrands.com/wp-content/uploads/2014/04/tatra.png" alt="">
+                    </div>
+                    <div class="video-title">
+                        <h6>13 Instagram trends of 2022</h6>
+                        <p>cars wala<i class="fa fa-check"></i></p>
+                        <p>900k Views .  2h ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-box">
+                <div class="video-thum">
+                    <video width="100%" height="100%"
+            poster= 
+"https://static.rfstat.com/gm-media/template/87/screen/7212/style/7263/654afc98d156_1x.webp"> 
+        <source src="https://player.vimeo.com/progressive_redirect/playback/854042116/rendition/360p/file.mp4?loc=external&oauth2_token_id=57447761&signature=c5671fd0c1b4e8b053454e030e63dabcc0fc548c75762c76911fa75b888d4575"
+                type="video/mp4"> 
+    </video> 
+                </div>
+                
+                <div class="video-detail">
+                    <div class="profile">
+                        <img src="https://www.autocarbrands.com/wp-content/uploads/2014/04/tesla.png" alt="">
+                    </div>
+                    <div class="video-title">
+                        <h6>Edit Like Instagram Pro</h6>
+                        <p>Guru ji<i class="fa fa-check"></i></p>
+                        <p>1k Views . 7 days ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="video-box">
+                <div class="video-thum">
+                    <video width="100%" height="100%"
+        poster= 
+"https://static.rfstat.com/gm-media/template/206/screen/5931/style/5982/68ff4a6ad74b_1x.webp"> 
+        <source src="https://player.vimeo.com/progressive_redirect/playback/854042116/rendition/360p/file.mp4?loc=external&oauth2_token_id=57447761&signature=c5671fd0c1b4e8b053454e030e63dabcc0fc548c75762c76911fa75b888d4575"
+                type="video/mp4"> 
+    </video> 
+                </div>
+                
+                <div class="video-detail">
+                    <div class="profile">
+                        <img src="https://th.bing.com/th/id/OIP.vmRBCrR1hZvlxDf9ZrDSLgHaHa?w=157&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="">
+                    </div>
+                    <div class="video-title">
+                        <h6>Home made healthy food in 5sec</h6>
+                        <p>Natural<i class="fa fa-check"></i></p>
+                        <p>12M Views . 2 days ago</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="video-box">
+                <div class="video-thum">
+                    <video width="100%" height="100%"
+          poster= 
+"https://static.rfstat.com/gm-media/template/206/screen/5932/style/5983/86bf55beeba0_1x.webp"> 
+        <source src="https://player.vimeo.com/progressive_redirect/playback/854042116/rendition/360p/file.mp4?loc=external&oauth2_token_id=57447761&signature=c5671fd0c1b4e8b053454e030e63dabcc0fc548c75762c76911fa75b888d4575"
+                type="video/mp4"> 
+    </video> 
+                </div>
+                
+                <div class="video-detail">
+                    <div class="profile">
+                        <img src="https://www.autocarbrands.com/wp-content/uploads/2014/04/geely.png" alt="">
+                    </div>
+                    <div class="video-title">
+                        <h6>How to Choose the Perfect food</h6>
+                        <p>Rogit Rathore<i class="fa fa-check"></i></p>
+                        <p>29M Views . 1 days ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="video-box">
+                <div class="video-thum">
+                    <video width="100%" height="100%"
+            poster= 
+"https://static.rfstat.com/gm-media/template/165/screen/4227/style/4278/3fca5cd1cd5d_1x.webp"> 
+        <source src="https://player.vimeo.com/progressive_redirect/playback/854042116/rendition/360p/file.mp4?loc=external&oauth2_token_id=57447761&signature=c5671fd0c1b4e8b053454e030e63dabcc0fc548c75762c76911fa75b888d4575"
+                type="video/mp4"> 
+    </video> 
+                </div>
+                
+                <div class="video-detail">
+                    <div class="profile">
+                        <img src="https://www.autocarbrands.com/wp-content/uploads/2014/04/mercedes-benz.png" alt="">
+                    </div>
+                    <div class="video-title">
+                        <h6>Best Smart Watch under 1k</h6>
+                        <p>Rohit Negi <i class="fa fa-check"></i></p>
+                        <p>1B Views . 2 years ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-box">
+                <div class="video-thum">
+                    <video width="100%" height="100%"
+            poster= 
+"https://static.rfstat.com/gm-media/template/84/screen/7346/style/7397/07da8c3bb4fb_1x.webp"> 
+        <source src="https://player.vimeo.com/progressive_redirect/playback/854042116/rendition/360p/file.mp4?loc=external&oauth2_token_id=57447761&signature=c5671fd0c1b4e8b053454e030e63dabcc0fc548c75762c76911fa75b888d4575"
+                type="video/mp4"> 
+    </video> 
+                </div>
+                
+                <div class="video-detail">
+                    <div class="profile">
+                        <img src="https://www.autocarbrands.com/wp-content/uploads/2014/04/nissan.png" alt="">
+                    </div>
+                    <div class="video-title">
+                        <h6>Learn the Song in 2 Days</h6>
+                        <p>Mr. Ajay<i class="fa fa-check"></i></p>
+                        <p>19M Views . 3 days ago</p>
+                    </div>
+                </div>
+            </div>
+            <div class="video-box">
+                <div class="video-thum">
+                    <video width="100%" height="100%"
+            poster= 
+"https://static.rfstat.com/gm-media/template/206/screen/5935/style/5986/14c70f29ee8a_1x.webp"> 
+        <source src="https://player.vimeo.com/progressive_redirect/playback/854042116/rendition/360p/file.mp4?loc=external&oauth2_token_id=57447761&signature=c5671fd0c1b4e8b053454e030e63dabcc0fc548c75762c76911fa75b888d4575"
+                type="video/mp4"> 
+    </video> 
+                </div>
+                
+                <div class="video-detail">
+                    <div class="profile">
+                        <img src="https://www.autocarbrands.com/wp-content/uploads/2014/04/skoda.png" alt="">
+                    </div>
+                    <div class="video-title">
+                        <h6>Perfect Home Made Foods </h6>
+                        <p>Rohit Negi<i class="fa fa-check"></i></p>
+                        <p>150k Views .  10 weeks ago</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+   </div>
+</body>
+</html>

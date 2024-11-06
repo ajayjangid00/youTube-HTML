@@ -1,0 +1,109 @@
+@media only screen and (min-width:426px) and (max-width:768px) {
+  
+    header .menu {
+        /* background-color: orange; */
+    }
+
+    header .menu .logo .fa-bars {
+        padding: 10px 10px;
+        font-size: 1em;
+    }
+
+    header .menu .logo img {
+        /* font-size: .5em; */
+        width: 59%;
+    }
+
+    header .menu .search {
+        padding: 0 20px;
+        left: 0;
+    }
+
+    header .menu .search .ser input{
+        height: 5vh;
+    }
+    header .menu .search .ser input::placeholder{
+        padding-left: 20px;
+    }
+    header .menu .search .ser .fa-search {
+        padding: 1.2vh 1.9vw;
+    }
+
+    header .menu .search .fa-microphone {
+        padding: 8px 10px;
+        margin-left: 20px;
+    }
+    header .menu .icons img{
+        width: 2vw;
+    }
+    .main .box1{
+    width: 19vw;
+    padding: 20px 0px 0px 10px;
+    }
+    .main .box1 table tr td .fa{
+        padding: 0px 8px;
+        font-size: 1.1em;
+    }
+    .main .box1 table tr td p{
+        /* padding: 0px 10px; */
+        font-size: .9em;
+    }
+    .main .box2{
+        height: 93vh;
+        width: calc(100vw - 19vw);
+        /* background-color: aqua; */
+        overflow: hidden;
+    }
+    .main .box2 .top-bar{
+        height: 6vh;
+    padding: 0  0 6px 680px;
+    margin-top: 2px;
+    }
+    .main .box2 .top-bar ul li{
+        margin: 0 10px;
+        padding: 4px 15px;
+        border-radius: 10px;
+         font-size: .6em;
+     }
+     .main .box2 .video-bar .video-box{
+        width: 37vw;
+        height: 42vh;
+        /* background-color: red; */
+        /* border-radius: 10px; */
+        margin-bottom: -20px;
+    }
+    .main .box2 .video-bar .video-box .video-thum{
+        /* background-color: yellow; */
+        width: 37vw;
+        height: 24vh;
+        /* height: 30vh; */
+        /* border-radius: 10px; */
+        /* overflow: hidden; */
+    }
+    .main .box2 .video-bar .video-box .video-detail{
+        /* background-color: blue; */
+        width: 36vw;
+        /* height: 10vh; */
+        /* padding: 10px 0px 0 10px; */
+        /* display: flex; */
+        
+    }
+    .main .box2 .video-bar .video-box .video-detail .profile{
+        /* background-color: aqua; */
+        width: 5vw;
+        height: 5vh;
+        /* border-radius: 50%; */
+        /* overflow: hidden; */
+    }
+    .main .box2 .video-bar .video-box .video-detail .video-title{
+        padding: 0 3px;
+    }
+    .main .box2 .video-bar .video-box .video-detail .video-title h6{
+        padding: 3px 0px;
+        font-size: 1em;
+    }
+    .main .box2 .video-bar .video-box .video-detail .video-title p{
+        padding: 3px 0px;
+        font-size: .6em;
+    }
+}
